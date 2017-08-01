@@ -29,7 +29,7 @@ freeStyleJob(generateBuildJob) {
     scm {
         git {
             remote {
-                url("https://github.com/jareddeuna/SampleWebApp.git")
+                url("https://github.com/aaroncheng27/ProjectSimulation.git")
             }
         }
     }
