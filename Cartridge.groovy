@@ -29,7 +29,7 @@ freeStyleJob(generateBuildJob) {
     scm {
         git {
             remote {
-                url("https://github.com/aaroncheng27/ProjectSimulation.git")
+                url("https://github.com/jareddeuna/SampleWebApp.git")
             }
         }
     }
@@ -72,8 +72,8 @@ freeStyleJob(generateCodeAnalysisJob) {
 	wrappers {
 		timestamps()
     }
-	configure { project ->
 	
+	configure { project ->
 			project / 'builders' / 'hudson.plugins.sonar.SonarRunnerBuilder' {
 				
 			}
@@ -118,7 +118,7 @@ freeStyleJob(generateUploadToNexusJob) {
 					'sp.sd.nexusartifactuploader.Artifact'{
 						'artifactId'('sample')
 						'type'('war')
-						'file'('calc.war')
+						'file'('CounterWebApp.war')
 					}
 				}
 			}
