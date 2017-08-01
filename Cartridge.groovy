@@ -74,7 +74,7 @@ freeStyleJob(generateCodeAnalysisJob) {
     }
 	configure { project ->
 	
-			project / 'builders' / 'hudson.plugins.sonar.SonarRunnerBuilder' { #ProjectKey
+			project / 'builders' / 'hudson.plugins.sonar.SonarRunnerBuilder' {
 				
 			}
 	}
